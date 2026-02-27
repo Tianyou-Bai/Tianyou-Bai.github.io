@@ -3,93 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 替换成你的名字 -->
-    <title>柏天佑 | 个人主页</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- 可选：引入字体（和目标网页一致的无衬线字体） -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>柏天佑 - 个人学术主页</title>
+    <style>
+        /* 全局样式：经典学术风，白底黑字，简洁 */
+        body {
+            font-family: "Times New Roman", SimSun, serif;
+            background-color: #FFFFFF;
+            color: #000000;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            font-size: 16px;
+        }
+
+        /* 容器：居中，限制宽度，避免太宽 */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* 头部信息区 */
+        .header-info {
+            text-align: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #003366; /* 深蓝分隔线 */
+            padding-bottom: 20px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #003366;
+            margin-bottom: 10px;
+        }
+
+        .title {
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+
+        .affiliation {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .contact {
+            margin-top: 15px;
+            font-size: 15px;
+        }
+
+        /* 通用区块样式 */
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 20px;
+            font-weight: bold;
+            color: #003366;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+
+        /* 列表样式 */
+        ul {
+            padding-left: 20px;
+            margin-top: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+
+        /* 链接样式 */
+        a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 强调色 */
+        .highlight {
+            font-weight: bold;
+        }
+
+        /* 页脚 */
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 1px solid #ccc;
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <!-- 容器：居中布局 -->
-    <div class="container">
-        <!-- 头部：名字 + 简介 -->
-        <header class="header">
-            <h1 class="name">你的名字</h1>
-            <p class="intro">一名专注于「前端/后端/全栈」的开发者 <!-- 替换成你的定位 --></p>
-        </header>
 
-        <!-- 导航栏 -->
-        <nav class="nav">
-            <a href="#about">关于我</a>
-            <a href="#projects">项目</a>
-            <a href="#skills">技能</a>
-            <a href="#contact">联系</a>
-        </nav>
+<div class="container">
 
-        <!-- 关于我区块 -->
-        <section id="about" class="section">
-            <h2 class="section-title">关于我</h2>
-            <p class="section-content">
-                你可以在这里写自己的个人介绍，比如：<br>
-                目前就读/就职于XX学校/公司，主攻XX技术方向，喜欢XX开发，擅长用代码解决实际问题。<br>
-                平时喜欢学习XX技术，偶尔写技术博客，乐于分享和交流。
-            </p>
-        </section>
-
-        <!-- 项目区块 -->
-        <section id="projects" class="section">
-            <h2 class="section-title">项目作品</h2>
-            <div class="project-list">
-                <!-- 项目1：替换成你的项目信息 -->
-                <div class="project-item">
-                    <h3>项目名称1</h3>
-                    <p>项目描述：简单说明项目功能、解决的问题（例如：一个基于Vue的待办事项管理工具）</p>
-                    <p>技术栈：HTML/CSS/JavaScript、Vue.js</p>
-                    <a href="你的项目GitHub链接" target="_blank">查看源码</a>
-                </div>
-                <!-- 项目2：可新增/删除 -->
-                <div class="project-item">
-                    <h3>项目名称2</h3>
-                    <p>项目描述：一个Python爬虫工具，爬取XX网站的公开数据</p>
-                    <p>技术栈：Python、Requests、BeautifulSoup</p>
-                    <a href="你的项目GitHub链接" target="_blank">查看源码</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- 技能区块 -->
-        <section id="skills" class="section">
-            <h2 class="section-title">技能栈</h2>
-            <div class="skills-list">
-                <div class="skill-category">
-                    <h3>编程语言</h3>
-                    <p>Python、JavaScript、Java <!-- 替换成你的技能 --></p>
-                </div>
-                <div class="skill-category">
-                    <h3>前端技术</h3>
-                    <p>HTML5、CSS3、React、Vue <!-- 替换成你的技能 --></p>
-                </div>
-                <div class="skill-category">
-                    <h3>工具/其他</h3>
-                    <p>Git、GitHub、Docker、Linux <!-- 替换成你的技能 --></p>
-                </div>
-            </div>
-        </section>
-
-        <!-- 联系区块 -->
-        <section id="contact" class="section">
-            <h2 class="section-title">联系我</h2>
-            <div class="contact-list">
-                <p>📧 邮箱：your-email@example.com <!-- 替换成你的邮箱 --></p>
-                <p>💻 GitHub：<a href="https://github.com/你的用户名" target="_blank">github.com/你的用户名</a></p>
-                <p>✍️ 博客：（可选）你的博客地址</p>
-            </div>
-        </section>
-
-        <!-- 页脚 -->
-        <footer class="footer">
-            <p>&copy; 2024 你的名字 | All rights reserved</p>
-        </footer>
+    <!-- 头部：个人基本信息 -->
+    <div class="header-info">
+        <div class="name">柏天佑 (Your Name)</div>
+        <div class="title">
+            Ph.D. student
+        </div>
+        <div class="affiliation">
+            中国科学院自动化研究所<br>
+            多模态人工智能系统全国重点实验室
+        </div>
+        <div class="contact">
+            <strong>地址：</strong>北京市海淀区中关村东路95号，邮编 100000<br>
+            <strong>电话：</strong>+86-13315949586<br>
+            <strong>Email：</strong>baitianyou24 [at] ia.ac.cn
+        </div>
     </div>
+
+    <!-- 区块1：个人简介 (Biography) -->
+    <div class="section">
+        <div class="section-title">个人简介 (Biography)</div>
+        <p>
+            您可以在这里写一段关于自己的介绍。例如：<br>
+            您的名字于 [年份] 在 [学校] 获得学士学位，[年份] 在 [学校] 获得硕士学位，[年份] 在 [学校] 获得博士学位。
+            曾在 [公司/机构] 担任 [职位]。目前的研究兴趣包括 [研究方向1]、[研究方向2] 和 [研究方向3]。
+        </p>
+    </div>
+
+    <!-- 区块2：研究兴趣 (Research Interests) -->
+    <div class="section">
+        <div class="section-title">研究兴趣 (Research Interests)</div>
+        <ul>
+            <li>计算机视觉 (Computer Vision)</li>
+            <li>模式识别 (Pattern Recognition)</li>
+            <li>机器学习 (Machine Learning)</li>
+            <li>深度学习 (Deep Learning)</li>
+            <li>文档分析 (Document Analysis)</li>
+        </ul>
+    </div>
+
+
+    <!-- 区块4：代表性论文 (Selected Publications) -->
+    <div class="section">
+        <div class="section-title">代表性论文 (Selected Publications)</div>
+        <p style="margin-bottom:10px;">(* 表示通讯作者)</p>
+        <ul>
+            <!-- 论文1 -->
+            <li>
+                <span class="highlight">Author 1</span>, Author 2, Author 3*. 
+                <strong>"Title of the Paper."</strong> 
+                <em>IEEE Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024. 
+                [<a href="#">PDF</a>] [<a href="#">Code</a>]
+            </li>
+            <!-- 论文2 -->
+            <li>
+                Author A, <span class="highlight">Your Name</span>*, Author B. 
+                <strong>"Another Paper Title."</strong> 
+                <em>IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI)</em>, 2023. 
+                [<a href="#">PDF</a>]
+            </li>
+            <!-- 论文3 -->
+            <li>
+                Student Name, <span class="highlight">Your Name</span>. 
+                <strong>"A Journal Paper."</strong> 
+                <em>Pattern Recognition</em>, 2022. 
+            </li>
+        </ul>
+        <p style="margin-top:15px;">
+            完整论文列表请参考：<a href="#">Google Scholar</a> | <a href="#">DBLP</a>
+        </p>
+    </div>
+
+    <!-- 区块5：学术服务 (Professional Activities) -->
+    <div class="section">
+        <div class="section-title">学术服务 (Professional Activities)</div>
+        <ul>
+            <li><strong>期刊审稿人：</strong> IEEE TPAMI, IJCV, Pattern Recognition, etc.</li>
+            <li><strong>会议程序委员 (PC Member)：</strong> CVPR, ICCV, NeurIPS, AAAI, etc.</li>
+            <li><strong>组织工作：</strong> 某某会议 2023 宣传主席 (Publicity Chair)</li>
+        </ul>
+    </div>
+
+    <!-- 区块6：荣誉奖励 (Awards) -->
+    <div class="section">
+        <div class="section-title">荣誉与奖励 (Honors & Awards)</div>
+        <ul>
+            <li>2024年，某某优秀论文奖</li>
+            <li>2023年，国家自然科学基金优秀青年科学基金</li>
+            <li>2022年，校级优秀教师</li>
+        </ul>
+    </div>
+
+    <!-- 页脚 -->
+    <div class="footer">
+        <p>Last Updated: 2024年02月</p>
+        <p>&copy; 2024 BaiTianyou. All Rights Reserved.</p>
+    </div>
+
+</div>
+
 </body>
 </html>
